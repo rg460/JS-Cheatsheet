@@ -128,3 +128,12 @@ const filter = (...args) =>{
 }
 console.log(filter(1,2,3))
 
+//  Destructuring 
+
+// Easily Extract array Elements or Objects or Object properties and store them in variables
+// Example Array Destructring
+const numbers = [1,2,3]
+[num1,num2] = numbers;
+console.log(num1, num2) 
+
+
