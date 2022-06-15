@@ -33,3 +33,23 @@ printMyName3('Ronaldo', 9)
 
 const multiply = (number) => number * 2;
 console.log(multiply(2));
+
+// Exports and Imports(Modules)
+// Example
+// Exports
+const person = {
+    name: 'John',
+}
+export default person
+// Import
+import person from './person'
+
+// Example 2 
+export const clean = () =>{
+    // code 
+}
+export const baseData = 10;
+
+// import - named import
+import{baseData} from './utility.js'
+import{clean} from './utility.js'
