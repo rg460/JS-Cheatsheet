@@ -116,3 +116,15 @@ class Person extends Human {{
         console.log(this.name);
     }
 }
+// Spread and Rest Operator 
+// Spread - used to split up array elements OR object properties , ... used to copy old array
+const numbers = [1,2,3];
+const newNumbers = [...numbers,4];
+console.log(newNumbers) // OUTPUT : [1,2,3,4]
+
+// Rest - used to merge a list of functions arguments into a an array , used in a function
+const filter = (...args) =>{
+    return args.filter(element  === 1);
+}
+console.log(filter(1,2,3))
+
