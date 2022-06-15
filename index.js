@@ -88,6 +88,7 @@ class Human {
 }
 class Person extends Human {{
     constructor(){
+        super();
         this.name = 'John';
     }
     printMyName(){
@@ -97,3 +98,21 @@ class Person extends Human {{
 const person3 = new Person();
 person3.printMyName();
 person3.printGender();
+
+// Properties and Methods
+class Human {
+   
+        gender = 'male'
+    
+    printgender(){
+        console.log(this.gender);
+    }
+}
+class Person extends Human {{
+   
+        this = 'John';
+    
+    printMyName = () =>{
+        console.log(this.name);
+    }
+}
