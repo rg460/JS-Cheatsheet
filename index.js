@@ -53,3 +53,47 @@ export const baseData = 10;
 // import - named import
 import{baseData} from './utility.js'
 import{clean} from './utility.js'
+
+// Classes
+// Example
+class Person {
+    name = 'Max'
+    call = () =>{
+        // code
+    }
+}
+const myPerson = new Person()
+myPerson.call()
+console.log(myPerson.name);
+// Example 2
+class Person {
+    constructor(){
+        this.name = 'John';
+    }
+    printMyName(){
+        console.log(this.name);
+    }
+}
+const person3 = new Person();
+person3.printMyName();
+
+// Example 3 
+class Human {
+    constructor(){
+        this.gender = 'male'
+    }
+    printgender(){
+        console.log(this.gender);
+    }
+}
+class Person extends Human {{
+    constructor(){
+        this.name = 'John';
+    }
+    printMyName(){
+        console.log(this.name);
+    }
+}
+const person3 = new Person();
+person3.printMyName();
+person3.printGender();
